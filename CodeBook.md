@@ -1,4 +1,3 @@
-
 Codebook for Getting and Cleaning Data - Peer Assessment 1
 
 A decription of the Original Data used can be found at:
@@ -34,9 +33,13 @@ The "Inertial Signals" subfolders from the Original Data are not required.
 
 e.g.
 Subject	Activity	Activity Name 	   tBodyAcc-mean()-X 	...
+
 1		1		WALKING		   0.2773308		...
+
 1		2		WALKING_UPSTAIRS	   0.2554617		...
+
 ...		...		...			   ...			...
+
 30        	6   	     	LAYING             0.2810339		...
 
 The final data set is called "tidy_set" and is written to an output file "tidy_set.txt".
@@ -47,48 +50,53 @@ ANNEX A:
  
 The complete list of variable names which were either Mean or Standard Deviation are:
            
- "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"          
- "tBodyAcc-mean()-Z"           "tBodyAcc-std()-X"           
- "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
- "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"       
- "tGravityAcc-mean()-Z"        "tGravityAcc-std()-X"        
- "tGravityAcc-std()-Y"         "tGravityAcc-std()-Z"        
- "tBodyAccJerk-mean()-X"       "tBodyAccJerk-mean()-Y"      
- "tBodyAccJerk-mean()-Z"       "tBodyAccJerk-std()-X"       
- "tBodyAccJerk-std()-Y"        "tBodyAccJerk-std()-Z"       
- "tBodyGyro-mean()-X"          "tBodyGyro-mean()-Y"         
- "tBodyGyro-mean()-Z"          "tBodyGyro-std()-X"          
- "tBodyGyro-std()-Y"           "tBodyGyro-std()-Z"          
- "tBodyGyroJerk-mean()-X"      "tBodyGyroJerk-mean()-Y"     
- "tBodyGyroJerk-mean()-Z"      "tBodyGyroJerk-std()-X"      
- "tBodyGyroJerk-std()-Y"       "tBodyGyroJerk-std()-Z"      
- "tBodyAccMag-mean()"          "tBodyAccMag-std()"          
- "tGravityAccMag-mean()"       "tGravityAccMag-std()"       
- "tBodyAccJerkMag-mean()"      "tBodyAccJerkMag-std()"      
- "tBodyGyroMag-mean()"         "tBodyGyroMag-std()"         
- "tBodyGyroJerkMag-mean()"     "tBodyGyroJerkMag-std()"     
- "fBodyAcc-mean()-X"           "fBodyAcc-mean()-Y"          
- "fBodyAcc-mean()-Z"           "fBodyAcc-std()-X"           
- "fBodyAcc-std()-Y"            "fBodyAcc-std()-Z"           
- "fBodyAccJerk-mean()-X"       "fBodyAccJerk-mean()-Y"      
- "fBodyAccJerk-mean()-Z"       "fBodyAccJerk-std()-X"       
- "fBodyAccJerk-std()-Y"        "fBodyAccJerk-std()-Z"       
- "fBodyGyro-mean()-X"          "fBodyGyro-mean()-Y"         
- "fBodyGyro-mean()-Z"          "fBodyGyro-std()-X"          
- "fBodyGyro-std()-Y"           "fBodyGyro-std()-Z"          
- "fBodyAccMag-mean()"          "fBodyAccMag-std()"          
- "fBodyBodyAccJerkMag-mean()"  "fBodyBodyAccJerkMag-std()"  
- "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
- "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()" 
+ "tBodyAcc-mean()-X"                "tBodyAcc-mean()-Y"          
+ "tBodyAcc-mean()-Z"                "tBodyAcc-std()-X"           
+ "tBodyAcc-std()-Y"                 "tBodyAcc-std()-Z"           
+ "tGravityAcc-mean()-X"             "tGravityAcc-mean()-Y"       
+ "tGravityAcc-mean()-Z"             "tGravityAcc-std()-X"        
+ "tGravityAcc-std()-Y"              "tGravityAcc-std()-Z"        
+ "tBodyAccJerk-mean()-X"            "tBodyAccJerk-mean()-Y"      
+ "tBodyAccJerk-mean()-Z"            "tBodyAccJerk-std()-X"       
+ "tBodyAccJerk-std()-Y"             "tBodyAccJerk-std()-Z"       
+ "tBodyGyro-mean()-X"               "tBodyGyro-mean()-Y"         
+ "tBodyGyro-mean()-Z"               "tBodyGyro-std()-X"          
+ "tBodyGyro-std()-Y"                "tBodyGyro-std()-Z"          
+ "tBodyGyroJerk-mean()-X"           "tBodyGyroJerk-mean()-Y"     
+ "tBodyGyroJerk-mean()-Z"           "tBodyGyroJerk-std()-X"      
+ "tBodyGyroJerk-std()-Y"            "tBodyGyroJerk-std()-Z"      
+ "tBodyAccMag-mean()"               "tBodyAccMag-std()"          
+ "tGravityAccMag-mean()"            "tGravityAccMag-std()"       
+ "tBodyAccJerkMag-mean()"           "tBodyAccJerkMag-std()"      
+ "tBodyGyroMag-mean()"              "tBodyGyroMag-std()"         
+ "tBodyGyroJerkMag-mean()"          "tBodyGyroJerkMag-std()"     
+ "fBodyAcc-mean()-X"                "fBodyAcc-mean()-Y"          
+ "fBodyAcc-mean()-Z"               "fBodyAcc-std()-X"           
+ "fBodyAcc-std()-Y"                 "fBodyAcc-std()-Z"           
+ "fBodyAccJerk-mean()-X"            "fBodyAccJerk-mean()-Y"      
+ "fBodyAccJerk-mean()-Z"            "fBodyAccJerk-std()-X"       
+ "fBodyAccJerk-std()-Y"             "fBodyAccJerk-std()-Z"       
+ "fBodyGyro-mean()-X"               "fBodyGyro-mean()-Y"         
+ "fBodyGyro-mean()-Z"               "fBodyGyro-std()-X"          
+ "fBodyGyro-std()-Y"                "fBodyGyro-std()-Z"          
+ "fBodyAccMag-mean()"               "fBodyAccMag-std()"          
+ "fBodyBodyAccJerkMag-mean()"       "fBodyBodyAccJerkMag-std()"  
+ "fBodyBodyGyroMag-mean()"          "fBodyBodyGyroMag-std()"     
+ "fBodyBodyGyroJerkMag-mean()"      "fBodyBodyGyroJerkMag-std()" 
 
 These feature as columns 3-68 in "trimmed_set", 4-69 in "activitynamed_set" and are the basis for the mean values created for 4-69 of the final "tidy_set"
 
 ANNEX B:
 -------
 Activity Number		Activity Name
-1			WALKING
+	1			WALKING
+	
 	2			WALKING_UPSTAIRS
+	
 	3			WALKING_DOWNSTAIRS
+	
 	4			SITTING
+	
 	5			STANDING
+	
 	6			LAYING
