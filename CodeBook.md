@@ -89,6 +89,7 @@ These feature as columns 3-68 in "trimmed_set", 4-69 in "activitynamed_set" and 
 ANNEX B:
 -------
 Activity Number		Activity Name
+
 	1			WALKING
 	
 	2			WALKING_UPSTAIRS
